@@ -1,5 +1,6 @@
 package com.example.snaaaake;
 
+import Logic.Tablero;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,6 +19,25 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        //launch();
+        //test();
+        Tablero tablero = new Tablero();
+
+    }
+
+    public static void test(){
+
+        for(int i = 0; i < 5; i++){
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            System.out.println(i);
+
+        }
+
     }
 }
